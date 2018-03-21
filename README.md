@@ -1,1 +1,2 @@
 # Kompilator-webowy
+Projekt zespołowy
