@@ -8,6 +8,9 @@ import { PrivateRoute } from '../_components';
 import { HomePage } from '../HomePage';
 import { LoginPage } from '../LoginPage';
 import { RegisterPage } from '../RegisterPage';
+import Navbar from '../_components/Navbar';
+
+import './App.css';
 
 class App extends React.Component {
     constructor(props) {
@@ -21,24 +24,26 @@ class App extends React.Component {
     }
 
     render() {
+
         const { alert } = this.props;
         return (
-            <div className="jumbotron">
-                <div className="container">
-                    <div className="col-sm-8 col-sm-offset-2">
-                        {alert.message &&
-                            <div className={`alert ${alert.type}`}>{alert.message}</div>
-                        }
-                        <Router history={history}>
-                            <div>
-                                <PrivateRoute exact path="/" component={HomePage} />
-                                <Route path="/login" component={LoginPage} />
-                                <Route path="/register" component={RegisterPage} />
-                            </div>
-                        </Router>
-                    </div>
-                </div>
-            </div>
+          <div>
+            <Navbar/>
+              <div className="container">
+                  <div className="col-md-12">
+                      {alert.message &&
+                          <div className={`alert ${alert.type}`}>{alert.message}</div>
+                      }
+                      <Router history={history}>
+                          <div>
+                              <PrivateRoute exact path="/" component={HomePage} />
+                              <Route path="/login" component={LoginPage} />
+                              <Route path="/register" component={RegisterPage} />
+                          </div>
+                      </Router>
+                  </div>
+              </div>
+          </div>
         );
     }
 }
@@ -51,4 +56,4 @@ function mapStateToProps(state) {
 }
 
 const connectedApp = connect(mapStateToProps)(App);
-export { connectedApp as App }; 
+export { connectedApp as App };
