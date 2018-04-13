@@ -9,10 +9,9 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 
 You need to install npm
-https://nodejs.org/en/download/
 
 ```
-Give examples
+https://nodejs.org/en/download/
 ```
 
 ### Installing
@@ -40,6 +39,7 @@ How to deploy on server
 * [Redux](https://redux.js.org/) - State container for JavaScript apps
 * [npm](https://www.npmjs.com/) - Dependency Management
 * [Bootstrap 4](https://getbootstrap.com/docs/4.0) - Frontend framework
+* [Babel](https://babeljs.io/) - JS compiler
 
 ## License
 
