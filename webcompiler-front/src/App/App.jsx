@@ -8,7 +8,6 @@ import { PrivateRoute } from '../_components';
 import { HomePage } from '../HomePage';
 import { LoginPage } from '../LoginPage';
 import { RegisterPage } from '../RegisterPage';
-import Navbar from '../_components/Navbar';
 
 import './App.css';
 
@@ -28,7 +27,6 @@ class App extends React.Component {
         const { alert } = this.props;
         return (
           <div>
-            <Navbar/>
               <div className="container">
                   <div className="col-md-12">
                       {alert.message &&
