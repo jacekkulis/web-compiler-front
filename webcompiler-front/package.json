@@ -16,7 +16,7 @@
     "redux-thunk": "^2.2.0"
   },
   "scripts": {
-    "start": "webpack-dev-server --open --color"
+    "start": "webpack-dev-server --open --color --hot --host 0.0.0.0 --port 8080"
   },
   "devDependencies": {
     "babel-core": "^6.21.0",

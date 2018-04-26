@@ -49,6 +49,7 @@ module.exports = {
         inject: 'body'
     })],
     devServer: {
-        historyApiFallback: true
+        historyApiFallback: true,
+	disableHostCheck: true
     }
 }
